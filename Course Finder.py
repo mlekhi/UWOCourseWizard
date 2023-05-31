@@ -6,15 +6,14 @@
 
 username = "username" # input your student center username here
 password = "password" # input your student center password here
-fullCourse = "MATH 1600A" # edit your course name here; try to input the full, correct name
+fullCourse = "course name" # edit your course name here; try to input the full, correct name
+PATH = "/Users/name/chromedriver" # Path to your Chrome WebDriver
 
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
-# set up path based on where you have your chrome!
-PATH = "/Users/mayal/chromedriver" 
 driver = webdriver.Chrome(PATH)
 driver.get("https://student.uwo.ca/psp/heprdweb/?cmd=login")
 sleep(2)
